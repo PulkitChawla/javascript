@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+var name="";
+function print(event){
+	name=event.target.value;
+}
+console.log(event);
+console.log(name);
+
+function display(event){
+console.log(name);
+var disp=document.getElementById("disp");
+disp.innerText=name;
+}
+</script>
+<h1>Show your name</h1>
+<input onchange={print(event)} value=""/>
+<button onclick={display(event)}>Show</button>
+<br>
+<label>your name is:</label>
+<p id="disp"></p>
+</body>
+</html>
+<!-- onmouseover={display()} -->
